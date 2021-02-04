@@ -21,10 +21,11 @@ import useToggle from '../hooks/useToggle'
 // export default ToggleComponent
 
 const ToggleComponent = () => {
-
+    //our custom hook in use. True/False
     const [coffeePower, setCoffeePower] = useToggle()
 
     return (
+        //ternary to identify what to toggle between true and false
         <div>
             <h1>Did you have your coffee this morning?</h1>
             <div>{coffeePower ? '🤪' : '☕️'}</div>

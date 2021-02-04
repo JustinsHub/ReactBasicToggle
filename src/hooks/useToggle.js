@@ -8,6 +8,7 @@ const useToggle = (toggler = false) => {
     const toggleSet = () => {
     setToggle(toggle => !toggle)
     }
+    //return original state and it's function changed state by destructuring
     return [toggle, toggleSet]
 }
 
